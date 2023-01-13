@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:staged": "Jest"
+    "test": "jest --passWithNoTests --watch",
+    "test:staged": "jest --passWithNoTests"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +19,9 @@
     "ts-jest": "^29.0.4",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@types/faker": "^6.6.9",
+    "faker": "^6.6.6"
   }
 }
