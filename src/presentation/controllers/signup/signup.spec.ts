@@ -1,6 +1,8 @@
+import { resolve } from "path"
 import { InvalidParamError, MissingParamError, ServerError } from "../../error"
 import { AccountModel, AddAccount, AddAccountModel, EmailValidator } from "./signup-protocols"
 import { SignupController } from "./signupController"
+import { rejects } from "assert"
 
 interface SutTypes {
   sut: SignupController
@@ -185,7 +187,7 @@ describe('Signup controller', () => {
   it('should return 500 if addAccount throws', async () => {
     const { sut, addAccountStub } = makeSut()
     jest.spyOn(addAccountStub, 'add').mockImplementationOnce(() => {
-      throw new Error()
+      return new Promise((resolve, reject) => reject(new Error()))
     })
     const httpRequest = {
       body: {
