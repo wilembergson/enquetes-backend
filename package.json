@@ -38,6 +38,7 @@
   "dependencies": {
     "@types/faker": "^6.6.9",
     "faker": "^6.6.6",
+    "fast-glob": "^3.2.12",
     "mongodb": "^4.13.0",
     "validator": "^13.7.0"
   }
