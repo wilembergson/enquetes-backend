@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1674866607818" clover="3.2.0">
-  <project timestamp="1674866607818" name="All files">
-    <metrics statements="287" coveredstatements="223" conditionals="57" coveredconditionals="43" methods="36" coveredmethods="23" elements="380" coveredelements="289" complexity="0" loc="287" ncloc="287" packages="15" files="28" classes="28"/>
+<coverage generated="1674952149092" clover="3.2.0">
+  <project timestamp="1674952149101" name="All files">
+    <metrics statements="321" coveredstatements="253" conditionals="64" coveredconditionals="47" methods="41" coveredmethods="27" elements="426" coveredelements="327" complexity="0" loc="321" ncloc="321" packages="16" files="31" classes="31"/>
     <package name="data.protocols">
       <metrics statements="13" coveredstatements="0" conditionals="3" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="add-account-repository.ts" path="/home/xxx/Documentos/clean-node-api/src/data/protocols/add-account-repository.ts">
@@ -243,16 +243,17 @@
       </file>
     </package>
     <package name="presentation.controllers.signup">
-      <metrics statements="44" coveredstatements="40" conditionals="12" coveredconditionals="11" methods="3" coveredmethods="2"/>
+      <metrics statements="44" coveredstatements="39" conditionals="11" coveredconditionals="10" methods="3" coveredmethods="2"/>
       <file name="signup-protocols.ts" path="/home/xxx/Documentos/clean-node-api/src/presentation/controllers/signup/signup-protocols.ts">
-        <metrics statements="4" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="5" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
       </file>
       <file name="signupController.ts" path="/home/xxx/Documentos/clean-node-api/src/presentation/controllers/signup/signupController.ts">
-        <metrics statements="40" coveredstatements="40" conditionals="11" coveredconditionals="11" methods="2" coveredmethods="2"/>
+        <metrics statements="39" coveredstatements="39" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -262,37 +263,36 @@
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="11" count="14" type="stmt"/>
-        <line num="12" count="14" type="stmt"/>
-        <line num="13" count="14" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="16" count="12" type="stmt"/>
-        <line num="17" count="12" type="stmt"/>
-        <line num="18" count="12" type="cond" truecount="1" falsecount="0"/>
-        <line num="19" count="42" type="cond" truecount="1" falsecount="0"/>
-        <line num="20" count="4" type="stmt"/>
-        <line num="21" count="4" type="stmt"/>
-        <line num="22" count="42" type="stmt"/>
-        <line num="23" count="8" type="cond" truecount="1" falsecount="0"/>
-        <line num="24" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="12" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
+        <line num="14" count="12" type="stmt"/>
+        <line num="15" count="12" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="10" type="stmt"/>
+        <line num="19" count="10" type="stmt"/>
+        <line num="20" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="9" type="stmt"/>
+        <line num="23" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="27" count="7" type="cond" truecount="1" falsecount="0"/>
-        <line num="28" count="12" type="cond" truecount="1" falsecount="0"/>
-        <line num="29" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="30" count="5" type="stmt"/>
-        <line num="31" count="5" type="stmt"/>
-        <line num="32" count="5" type="stmt"/>
-        <line num="33" count="5" type="stmt"/>
-        <line num="34" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="35" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="26" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="28" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="29" count="6" type="stmt"/>
+        <line num="30" count="6" type="stmt"/>
+        <line num="31" count="6" type="stmt"/>
+        <line num="32" count="6" type="stmt"/>
+        <line num="33" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="34" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="35" count="2" type="stmt"/>
         <line num="36" count="2" type="stmt"/>
         <line num="37" count="2" type="stmt"/>
-        <line num="38" count="2" type="stmt"/>
-        <line num="39" count="12" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
+        <line num="38" count="10" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
       </file>
     </package>
     <package name="presentation.error">
@@ -317,9 +317,9 @@
         <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="3" count="12" type="stmt"/>
-        <line num="4" count="12" type="stmt"/>
-        <line num="5" count="12" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
       </file>
       <file name="server-error.ts" path="/home/xxx/Documentos/clean-node-api/src/presentation/error/server-error.ts">
@@ -350,9 +350,9 @@
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="5" count="18" type="stmt"/>
-        <line num="6" count="18" type="stmt"/>
-        <line num="7" count="18" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="10" count="2" type="stmt"/>
@@ -365,9 +365,55 @@
         <line num="17" count="9" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
         <line num="19" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="20" count="12" type="stmt"/>
-        <line num="21" count="12" type="stmt"/>
-        <line num="22" count="12" type="stmt"/>
+        <line num="20" count="13" type="stmt"/>
+        <line num="21" count="13" type="stmt"/>
+        <line num="22" count="13" type="stmt"/>
+      </file>
+    </package>
+    <package name="presentation.helpers.validators">
+      <metrics statements="34" coveredstatements="31" conditionals="8" coveredconditionals="5" methods="5" coveredmethods="4"/>
+      <file name="required-field-validation.ts" path="/home/xxx/Documentos/clean-node-api/src/presentation/helpers/validators/required-field-validation.ts">
+        <metrics statements="14" coveredstatements="14" conditionals="3" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="20" type="stmt"/>
+        <line num="9" count="20" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+      <file name="validation-composite.ts" path="/home/xxx/Documentos/clean-node-api/src/presentation/helpers/validators/validation-composite.ts">
+        <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+      <file name="validation.ts" path="/home/xxx/Documentos/clean-node-api/src/presentation/helpers/validators/validation.ts">
+        <metrics statements="3" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
       </file>
     </package>
     <package name="presentation.protocols">
