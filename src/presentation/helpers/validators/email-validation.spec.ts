@@ -1,6 +1,6 @@
 import { InvalidParamError, MissingParamError, ServerError } from "../../error"
 import { EmailValidation } from "./email-validation"
-import { badRequest, ok, serverError } from "../../helpers/http-helper"
+import { badRequest, ok, serverError } from "../../helpers/http/http-helper"
 import { EmailValidator } from "../../protocols/email-validator"
 
 interface SutTypes {

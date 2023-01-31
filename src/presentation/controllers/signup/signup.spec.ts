@@ -2,7 +2,7 @@ import { resolve } from "path"
 import { InvalidParamError, MissingParamError, ServerError } from "../../error"
 import { AccountModel, AddAccount, AddAccountModel, EmailValidator, HttpRequest, Validation } from "./signup-protocols"
 import { SignupController } from "./signupController"
-import { badRequest, ok, serverError } from "../../helpers/http-helper"
+import { badRequest, ok, serverError } from "../../helpers/http/http-helper"
 
 interface SutTypes {
   sut: SignupController
