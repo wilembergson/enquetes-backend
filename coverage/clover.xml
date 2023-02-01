@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1675198303199" clover="3.2.0">
-  <project timestamp="1675198303199" name="All files">
-    <metrics statements="375" coveredstatements="15" conditionals="38" coveredconditionals="3" methods="37" coveredmethods="2" elements="450" coveredelements="20" complexity="0" loc="375" ncloc="375" packages="17" files="36" classes="36"/>
-    <package name="data.protocols">
+<coverage generated="1675215247635" clover="3.2.0">
+  <project timestamp="1675215247635" name="All files">
+    <metrics statements="415" coveredstatements="40" conditionals="48" coveredconditionals="9" methods="41" coveredmethods="2" elements="504" coveredelements="51" complexity="0" loc="415" ncloc="415" packages="18" files="40" classes="40"/>
+    <package name="data.protocols.cryptografy">
+      <metrics statements="9" coveredstatements="0" conditionals="3" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="encrypter.ts" path="/home/xxx/Documentos/clean-node-api/src/data/protocols/cryptografy/encrypter.ts">
+        <metrics statements="3" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+      </file>
+      <file name="hash-comparer.ts" path="/home/xxx/Documentos/clean-node-api/src/data/protocols/cryptografy/hash-comparer.ts">
+        <metrics statements="3" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+      </file>
+      <file name="token-generator.ts" path="/home/xxx/Documentos/clean-node-api/src/data/protocols/cryptografy/token-generator.ts">
+        <metrics statements="3" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="data.protocols.db">
       <metrics statements="18" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
-      <file name="add-account-repository.ts" path="/home/xxx/Documentos/clean-node-api/src/data/protocols/add-account-repository.ts">
+      <file name="add-account-repository.ts" path="/home/xxx/Documentos/clean-node-api/src/data/protocols/db/add-account-repository.ts">
         <metrics statements="7" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
@@ -14,13 +35,7 @@
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
       </file>
-      <file name="encrypter.ts" path="/home/xxx/Documentos/clean-node-api/src/data/protocols/encrypter.ts">
-        <metrics statements="3" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-      </file>
-      <file name="load-account-by-email.ts" path="/home/xxx/Documentos/clean-node-api/src/data/protocols/load-account-by-email.ts">
+      <file name="load-account-by-email.ts" path="/home/xxx/Documentos/clean-node-api/src/data/protocols/db/load-account-by-email.ts">
         <metrics statements="5" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
@@ -28,7 +43,13 @@
         <line num="4" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
       </file>
-      <file name="log-error-repository.ts" path="/home/xxx/Documentos/clean-node-api/src/data/protocols/log-error-repository.ts">
+      <file name="log-error-repository.ts" path="/home/xxx/Documentos/clean-node-api/src/data/protocols/db/log-error-repository.ts">
+        <metrics statements="3" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+      </file>
+      <file name="update-access-token-repository.ts" path="/home/xxx/Documentos/clean-node-api/src/data/protocols/db/update-access-token-repository.ts">
         <metrics statements="3" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
@@ -68,24 +89,58 @@
       </file>
     </package>
     <package name="data.use-cases.authentication">
-      <metrics statements="15" coveredstatements="15" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+      <metrics statements="46" coveredstatements="40" conditionals="10" coveredconditionals="9" methods="3" coveredmethods="2"/>
+      <file name="db-authentication-protocols.ts" path="/home/xxx/Documentos/clean-node-api/src/data/use-cases/authentication/db-authentication-protocols.ts">
+        <metrics statements="6" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
       <file name="db-authentication.ts" path="/home/xxx/Documentos/clean-node-api/src/data/use-cases/authentication/db-authentication.ts">
-        <metrics statements="15" coveredstatements="15" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <metrics statements="40" coveredstatements="40" conditionals="9" coveredconditionals="9" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="11" type="stmt"/>
+        <line num="18" count="11" type="stmt"/>
+        <line num="19" count="11" type="stmt"/>
+        <line num="20" count="11" type="stmt"/>
+        <line num="21" count="11" type="stmt"/>
+        <line num="22" count="11" type="stmt"/>
+        <line num="23" count="11" type="stmt"/>
+        <line num="24" count="11" type="stmt"/>
+        <line num="25" count="11" type="stmt"/>
+        <line num="26" count="11" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="29" count="11" type="stmt"/>
+        <line num="30" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="9" type="stmt"/>
+        <line num="32" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="7" type="stmt"/>
+        <line num="34" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="35" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="36" count="5" type="stmt"/>
+        <line num="37" count="9" type="stmt"/>
+        <line num="38" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
       </file>
     </package>
     <package name="domain.model">
