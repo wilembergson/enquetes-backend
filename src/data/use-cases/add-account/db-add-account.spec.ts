@@ -60,7 +60,6 @@ describe('DbAddAccount UseCase', () => {
   it('should throw if Encrypter throws', async () => {
     const { sut, hasherStub } = makeSut()
     jest.spyOn(hasherStub, 'hash').mockReturnValueOnce(new Promise((resolve, reject) => reject(new Error())))
-
     const promise = sut.add(makeFakeAccountData())
     expect(promise).rejects.toThrow()
   })
