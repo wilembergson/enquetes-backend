@@ -1,4 +1,4 @@
-import { Collection } from "mongodb"
+import { Collection, ObjectId } from "mongodb"
 import { MongoHelper } from "../helpers/mongo-helper"
 import { AccountMongoRepository } from "./account-mongo-repository"
 
@@ -64,9 +64,10 @@ describe('Account Mongo Repository', () => {
     })
     const res = await accountCollection.findOne({ _id: insertedAccount.insertedId })
     expect(res.accessToken).toBeFalsy()
-    await sut.updateAccessToken(res._id, 'any_token')
-    const account  = await accountCollection.findOne({_id: res._id})
-    expect(account).toBeTruthy()
+    const id = res._id.toJSON()
+    await sut.updateAccessToken(id, 'any_token')
+    const account = await accountCollection.findOne({ _id: res._id })
+    expect(account.accessToken).toBeTruthy()
     expect(account.accessToken).toBe('any_token')
   })
 })
