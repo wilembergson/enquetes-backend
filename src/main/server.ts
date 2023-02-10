@@ -1,5 +1,8 @@
 import { MongoHelper } from "../infra/db/mongodb/helpers/mongo-helper"
+import dotenv from 'dotenv'
 import env from "./config/env"
+
+dotenv.config()
 
 MongoHelper.connect()
   .then(async () => {

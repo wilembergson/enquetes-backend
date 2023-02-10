@@ -1,10 +1,28 @@
-# Use root/example as user/password credentials
 version: '3.1'
 
 services:
+  api:
+    container_name: api
+    build: .
+    image: clean-node-api
+    restart: always
+    command: npm start
+    volumes:
+      - ./dist:/usr/src/clean-node-api/dist
+    environment:
+      MONGO_URL: "${MONGO_URL}"
+      JWT_SECRET: "${JWT_SECRET}"
+    ports:
+      - 5000:5000
+    depends_on:
+      - mongo
+    links:
+      - mongo
 
   mongo:
+    container_name: mongo
     image: mongo
-    container_name: mongodb
+    volumes:
+      - ./data:/data/db
     ports:
       - 27017:27017
