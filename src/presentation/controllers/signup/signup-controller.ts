@@ -1,12 +1,13 @@
-import { InvalidParamError } from "../../error"
-import { badRequest, ok, serverError } from "../../helpers/http/http-helper"
-import { AddAccount, Controller, EmailValidator, HttpRequest, HttpResponse, Validation } from "./signup-controller-protocols"
+import { EmailInUseError } from "../../error"
+import { badRequest, forbidden, ok, serverError } from "../../helpers/http/http-helper"
+import { AddAccount, Authentication, Controller, HttpRequest, HttpResponse, Validation } from "./signup-controller-protocols"
 
 
 export class SignupController implements Controller {
   constructor(
     private readonly addAccount: AddAccount,
-    private readonly validation: Validation
+    private readonly validation: Validation,
+    private readonly authentication: Authentication
   ) { }
 
   async handle(httpRequest: HttpRequest): Promise<HttpResponse> {
@@ -19,7 +20,12 @@ export class SignupController implements Controller {
         email,
         password
       })
-      return ok(account)
+      if(!account) return forbidden(new EmailInUseError())
+      const accessToken = await this.authentication.auth({
+        email,
+        password
+      })
+      return ok({ accessToken })
     } catch (error) {
       console.error(error)
       return serverError(error)

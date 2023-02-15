@@ -8,7 +8,7 @@ services:
     restart: always
     command: npm start
     volumes:
-      - ./dist:/usr/src/clean-node-api/dist
+      - ./dist/:/usr/src/clean-node-api/dist/
     environment:
       MONGO_URL: "${MONGO_URL}"
       JWT_SECRET: "${JWT_SECRET}"
