@@ -5,7 +5,6 @@ import { AccountMongoRepository } from "./account-mongo-repository"
 let accountCollection: Collection
 
 describe('Account Mongo Repository', () => {
-
   beforeAll(async () => {
     await MongoHelper.connect()
   })
