@@ -46,6 +46,5 @@ describe('DbAddSurvey UseCase', () => {
         jest.spyOn(addSurveyRepositoryStub, 'add').mockReturnValueOnce(new Promise((resolve, reject) => reject(new Error())))
         const promise = sut.add(makeFakeSurveyData())
         expect(promise).rejects.toThrow()
-        console.log('rerere')
       })
 })
