@@ -50,7 +50,7 @@ describe('Account Mongo Repository', () => {
       expect(account.email).toBe('any_email@gmail.com')
       expect(account.password).toBe('any_password')
     })
-  
+
     it('should return null if loadByEmail fails', async () => {
       const sut = makeSut()
       const account = await sut.loadByEmail('any_email@gmail.com')
@@ -73,6 +73,47 @@ describe('Account Mongo Repository', () => {
       const account = await accountCollection.findOne({ _id: res._id })
       expect(account.accessToken).toBeTruthy()
       expect(account.accessToken).toBe('any_token')
-    })  
+    })
+  })
+
+  describe('loadByToken()', () => {
+    it('should return an account on loadByToken without role', async () => {
+      const sut = makeSut()
+      await accountCollection.insertOne({
+        name: 'any_name',
+        email: 'any_email@gmail.com',
+        password: 'any_password',
+        accessToken: 'any_token'
+      })
+      const account = await sut.loadByToken('any_token')
+      expect(account).toBeTruthy()
+      expect(account.id).toBeTruthy()
+      expect(account.name).toBe('any_name')
+      expect(account.email).toBe('any_email@gmail.com')
+      expect(account.password).toBe('any_password')
+    })
+
+    it('should return an account on loadByToken with role', async () => {
+      const sut = makeSut()
+      await accountCollection.insertOne({
+        name: 'any_name',
+        email: 'any_email@gmail.com',
+        password: 'any_password',
+        accessToken: 'any_token',
+        role: 'any_role'
+      })
+      const account = await sut.loadByToken('any_token', 'any_role')
+      expect(account).toBeTruthy()
+      expect(account.id).toBeTruthy()
+      expect(account.name).toBe('any_name')
+      expect(account.email).toBe('any_email@gmail.com')
+      expect(account.password).toBe('any_password')
+    })
+
+    it('should return null if loadByToken fails', async () => {
+      const sut = makeSut()
+      const account = await sut.loadByEmail('any_token')
+      expect(account).toBeFalsy()
+    })
   })
 })
