@@ -1,3 +1,5 @@
+import { LoadSurveys } from "../../../domain/use-cases/load-surveys"
+import { LoadSurveysController } from "../../../presentation/controllers/survey/load-survey/load-surveys-controller"
 import { DbAddSurvey } from "./db-add-survey"
 import { AddSurveyModel, AddSurveyRepository } from "./db-add-survey-protocols"
 import MockDate from 'mockdate'
@@ -38,7 +40,7 @@ describe('DbAddSurvey UseCase', () => {
     beforeAll(() => {
         MockDate.set(new Date())
     })
-    beforeAll(() => {
+    afterAll(() => {
         MockDate.reset()
     })
     it('should call AddSurveyRepository with correct values', async () => {
