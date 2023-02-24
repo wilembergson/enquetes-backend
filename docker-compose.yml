@@ -10,8 +10,7 @@ services:
     volumes:
       - ./dist/:/usr/src/clean-node-api/dist/
     environment:
-      MONGO_URL: "${MONGO_URL}"
-      JWT_SECRET: "${JWT_SECRET}"
+      MONGO_URL: 'mongodb://mongo:27017/clear_node'
     ports:
       - 5000:5000
     depends_on:
